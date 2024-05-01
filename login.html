@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FYP MasterMind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('"C:\Users\ALRASHIDS\eclipse-workspace\SEPROJECT\src\main\webapp\1.png"');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+
+        .title {
+            font-family: monospace;
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            align-self: flex-end;
+            margin-right: 50px;
+        }
+
+        .subtitle {
+            font-family: monospace;
+            font-size: 24px;
+            font-weight: thin;
+            margin-bottom: 20px;
+            align-self: flex-end;
+            margin-right: 150px;
+        }
+
+        .login-form {
+            position: relative;
+            z-index: 2;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            align-self: flex-end;
+            margin-right: 150px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 2px;
+            font-family: monospace;
+            color: #fff;
+            text-align: right;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            font-family: monospace;
+        }
+
+        button {
+            width: 20%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: arial;
+            margin-left: auto;
+            margin-right: 120px;
+        }
+
+        button:hover {
+            background-color: #050505;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            font-family: monospace;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">FYP Central</h1>
+        <h2 class="subtitle">Login to Your Account</h2>
+        <div class="login-form">
+            <form action="login" method="POST">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <p class="forgot-password">If you forgot your password, contact the academic office.</p>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
